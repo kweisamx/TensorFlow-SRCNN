@@ -198,8 +198,8 @@ def input_setup(config):
 
 
     # Make list to numpy array. With this transform
-    arrinput = np.asarray(sub_input_sequence) # [?, 33, 33, 1]
-    arrlabel = np.asarray(sub_label_sequence) # [?, 21, 21, 1]
+    arrinput = np.asarray(sub_input_sequence) # [?, 33, 33, 3]
+    arrlabel = np.asarray(sub_label_sequence) # [?, 21, 21, 3]
 
     make_data_hf(arrinput, arrlabel, config)
 
